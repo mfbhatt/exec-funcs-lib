@@ -1,1 +1,1 @@
-export const Greeter = (name: string) => `Hello ${name}`;
+export const ExecuteSatement = (value: string) => (value !== undefined && value !== null && value !== '') ? Function('return ' + value)().toString() : '0';
